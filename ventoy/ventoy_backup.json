@@ -1,0 +1,99 @@
+{
+    "control":[
+        { "VTOY_MENU_LANGUAGE": "fr_FR" }
+    ],
+    "control_legacy":[
+        { "VTOY_MENU_LANGUAGE": "fr_FR" }
+    ],
+    "control_uefi":[
+        { "VTOY_MENU_LANGUAGE": "fr_FR" }
+    ],
+    "control_ia32":[
+        { "VTOY_MENU_LANGUAGE": "fr_FR" }
+    ],
+    "control_aa64":[
+        { "VTOY_MENU_LANGUAGE": "fr_FR" }
+    ],
+    "control_mips":[
+        { "VTOY_MENU_LANGUAGE": "fr_FR" }
+    ],
+    "theme":{
+        "file": "/ventoy/Vimix/theme.txt"
+    },
+    "menu_alias":[
+        {
+            "image": "/ISO/en-us_windows_10_consumer_editions_version_22h2_x64.iso",
+            "alias": "Windows 10"
+        },
+        {
+            "image": "/ISO/en-us_windows_11_business_editions_version_22h2_updated_oct_2022_x64.iso",
+            "alias": "Windows 11"
+        }
+    ],
+    "menu_class":[
+        {
+            "key": "ubuntu",
+            "class": "ubuntu"
+        },
+        {
+            "key": "debian",
+            "class": "debian"
+        },
+        {
+            "key": "kali",
+            "class": "kali"
+        },
+        {
+            "key": "DragonOS",
+            "class": "DragonOS"
+        },
+        {
+            "key": "windows",
+            "class": "windows"
+        },
+        {
+            "key": "HBCD_PE",
+            "class": "windows"
+        },
+        {
+            "key": "ReviOS",
+            "class": "ReviOS"
+        },
+        {
+            "key": "tails",
+            "class": "tails"
+        },
+        {
+            "key": "VMware",
+            "class": "ESXi"
+        },
+        {
+            "key": "ventoy",
+            "class": "ventoy"
+        },
+        {
+            "key": "linux-mint",
+            "class": "linux-mint"
+        },
+        {
+            "key": "dOOs",
+            "class": "dOOs"
+        }
+    ],
+    "persistence":[
+        {
+            "image": "/ISO/dOOs-Desktop.iso",
+            "backend":[
+                "/persistence/dOOS-Desktop-folders.dat",
+                "/persistence/dOOS-Desktop-full.dat"
+            ]
+        }
+    ],
+    "conf_replace":[
+        {
+            "iso": "/ISO/dOOs-Desktop.iso",
+            "org": "/boot/grub/grub.cfg",
+            "new": "/Boot_Conf_Replace/dOOs_persistence_grub.cfg"
+        }
+    ]
+}
